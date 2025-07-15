@@ -1,10 +1,10 @@
 // Define Customer class
 class Customer {
-  constructor(name, mobile, offer,place) {
-    this.name = name;
-    this.mobile = mobile;
-    this.offer = offer;
-    this.place = place;
+  constructor(custName, mobileNum, spclOffer, city) {
+    this.name = custName;
+    this.mobile = mobileNum;
+    this.offee = spclOffer;
+    this.place = city;
   }
 
   buyingClothes() {
@@ -31,8 +31,7 @@ function findCustomer() {
       <div class="result-line"><strong>Name:</strong> ${customer.name}</div>
       <div class="result-line"><strong>Mobile:</strong> ${customer.mobile}</div>
       <div class="result-line"><strong>Place:</strong> ${customer.place}</div>
-      <div class="result-line"><strong>Offer:</strong> ${customer.offer
-      }</div>     
+      <div class="result-line"><strong>Offer:</strong> ${customer.offer}</div>     
       <div class="result-line"><strong>Status:</strong> ${customer.buyingClothes()}</div>
     `;
   } else {
@@ -40,4 +39,3 @@ function findCustomer() {
   }
 }
 
-alert(customer.place);
